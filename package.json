@@ -1,0 +1,35 @@
+{
+  "name": "@kagura2718/pogoprotosadapter",
+  "version": "0.5.0",
+  "description": "Generate PokemonGoBuildData on Github Action",
+  "main": "index.js",
+  "scripts": {
+    "generate": "npm run generate-build; npm run generate-pretty-json;",
+    "generate-build": "ts-node ./bin/build.ts ./POGOProtos/GM/v2_GAME_MASTER.json ./PokemonGoBuildData",
+    "generate-pretty-json": "echo not yet implemented",
+    "test": "jest"
+  },
+  "keywords": [
+    "tool",
+    "game"
+  ],
+  "files": [
+    "README.md",
+    "LICENSE"
+  ],
+  "author": "kagura2718@gmail.com",
+  "license": "ECL-2.0",
+  "devDependencies": {
+    "@types/jest": "^27.4.0",
+    "@typescript-eslint/eslint-plugin": "^5.9.0",
+    "@typescript-eslint/parser": "^5.9.0",
+    "eslint": "^8.6.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.4.7",
+    "node": "^17.3.0",
+    "ts-jest": "^27.1.2",
+    "ts-node": "^10.4.0",
+    "tslib": "^2.3.1",
+    "typescript": "^4.5.4"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "@MEGA_AERODACTYL": {
+    "ja": "メガプテラ",
+    "en": "Mega Aerodactyl"
+  },
+  "@MEGA_VENUSAUR": {
+    "ja": "メガフシギバナ",
+    "en": "Mega Venusaur"
+  },
+  "@MEGA_CHARIZARD_X": {
+    "ja": "メガリザードンX",
+    "en": "Mega Charizard X"
+  },
+  "@MEGA_CHARIZARD_Y": {
+    "ja": "メガリザードンY",
+    "en": "Mega Charizard Y"
+  },
+  "@MEGA_BLASTOISE": {
+    "ja": "メガカメックス",
+    "en": "Mega Blastoise"
+  },
+  "@MEGA_BEEDRILL": {
+    "ja": "メガスピアー",
+    "en": "Mega Beedrill"
+  },
+  "@MEGA_PIDGEOT": {
+    "ja": "メガピジョット",
+    "en": "Mega Pidgeot"
+  },
+  "@MEGA_SLOWBRO": {
+    "ja": "メガヤドラン",
+    "en": "Mega Slowbro"
+  },
+  "@MEGA_GENGAR": {
+    "ja": "メガゲンガー",
+    "en": "Mega Gengar"
+  },
+  "@MEGA_GYARADOS": {
+    "ja": "メガギャラドス",
+    "en": "Mega Gyarados"
+  },
+  "@MEGA_AMPHAROS": {
+    "ja": "メガデンリュー",
+    "en": "Mega Ampharos"
+  },
+  "@MEGA_STEELIX": {
+    "ja": "メガハガネール",
+    "en": "Mega Steelix"
+  },
+  "@MEGA_HOUNDOOM": {
+    "ja": "メガヘルガー",
+    "en": "Mega Houndoom"
+  },
+  "@MEGA_MANECTRIC": {
+    "ja": "メガライボルト",
+    "en": "Mega Manectric"
+  },
+  "@MEGA_ALTARIA": {
+    "ja": "メガチルタリス",
+    "en": "Mega Altaria"
+  },
+  "@MEGA_ABSOL": {
+    "ja": "メガアブソル",
+    "en": "Mega Absol"
+  },
+  "@MEGA_LOPUNNY": {
+    "ja": "メガミミロップ",
+    "en": "Mega Lopunny"
+  },
+  "@MEGA_ABOMASNOW": {
+    "ja": "メガユキノオー",
+    "en": "Mega Abomasnow"
+  }
+}

@@ -1,0 +1,14 @@
+# on Github Action, temp created key file.
+
+DeployKey.pem
+.npmrc
+
+# https://github.com/Furtif/POGOProtos.git
+
+POGOProtos
+PokemonGoBuildData
+PokemonTranslationData
+
+# Node environment generics
+
+node_modules

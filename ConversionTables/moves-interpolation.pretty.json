@@ -1,0 +1,42 @@
+{
+  "TECHNO_BLAST_BURN": {
+    "ja": "テクノバスター(ほのお)",
+    "en": "Techno Blaster (Burn)"
+  },
+  "TECHNO_BLAST_CHILL": {
+    "ja": "テクノバスター(こおり)",
+    "en": "Techno Blaster (Ice)"
+  },
+  "TECHNO_BLAST_NORMAL": {
+    "ja": "テクノバスター(ノーマル)",
+    "en": "Techno Blaster (Normal)"
+  },
+  "TECHNO_BLAST_SHOCK": {
+    "ja": "テクノバスター(かくとう)",
+    "en": "Techno Blaster (Shock)"
+  },
+  "TECHNO_BLAST_WATER": {
+    "ja": "テクノバスター(みず)",
+    "en": "Techno Blaster (Water)"
+  },
+  "WEATHER_BALL_FIRE": {
+    "ja": "ウェザーボール(ほのお)",
+    "en": "Weather Ball (Fire)"
+  },
+  "WEATHER_BALL_ICE": {
+    "ja": "ウェザーボール(こおり)",
+    "en": "Weather Ball (Ice)"
+  },
+  "WEATHER_BALL_WATER": {
+    "ja": "ウェザーボール(みず)",
+    "en": "Weather Ball (Water)"
+  },
+  "WEATHER_BALL_NORMAL": {
+    "ja": "ウェザーボール(ノーマル)",
+    "en": "Weather Ball (Normal)"
+  },
+  "WEATHER_BALL_ROCK": {
+    "ja": "ウェザーボール(いわ)",
+    "en": "Weather Ball (Rock)"
+  }
+}

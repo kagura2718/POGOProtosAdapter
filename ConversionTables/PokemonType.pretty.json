@@ -1,0 +1,56 @@
+{
+  "Normal": {
+    "color": "9199a0"
+  },
+  "Fire": {
+    "color": "ff9b54"
+  },
+  "Water": {
+    "color": "4e8fd5"
+  },
+  "Electric": {
+    "color": "f4d23b"
+  },
+  "Grass": {
+    "color": "5fba53"
+  },
+  "Ice": {
+    "color": "73cebe"
+  },
+  "Fighting": {
+    "color": "cd4069"
+  },
+  "Poison": {
+    "color": "a666c7"
+  },
+  "Ground": {
+    "color": "da7746"
+  },
+  "Flying": {
+    "color": "90a8de"
+  },
+  "Psychic": {
+    "color": "f86e72"
+  },
+  "Bug": {
+    "color": "90c12d"
+  },
+  "Rock": {
+    "color": "c8b78a"
+  },
+  "Ghost": {
+    "color": "5468ad"
+  },
+  "Dragon": {
+    "color": "0968c0"
+  },
+  "Dark": {
+    "color": "5a5365"
+  },
+  "Steel": {
+    "color": "54879d"
+  },
+  "Fairy": {
+    "color": "ef8ce2"
+  }
+}
