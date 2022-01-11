@@ -21,8 +21,7 @@ export interface LevelJson {
   requireXlCandyCost: number[];
   shadowAttackBonus: number;
   shadowDefenceBonus: number;
-  // TODO should be removed optional
-  sameTypeBonus?: number;
+  sameTypeBonus: number;
   CPM: number[];
   evolutionMap: PokemonEvolutionBranchDatabase;
 }
@@ -53,8 +52,7 @@ export interface PokemonFormBuiltJson {
   };
   isGalarian?: boolean;
   isAlola?: boolean;
-  // TODO now progress
-  pokedexNumber?: number;
+  pokedexNumber: number;
 }
 
 export type PokemonFormJson = {
@@ -120,10 +118,6 @@ export interface MovesBuiltJson {
   power: number;
   isQuickMoves: boolean;
   isCinematicMoves: boolean;
-  /*
-   * TODO not hereother name `elite`
-   */
-  // isLegacy: boolean;
 }
 
 /**
@@ -175,11 +169,11 @@ export interface PokemonTypeJson {
    */
   attackWeight: number[];
   /*
-   * TODO Should have one?
+   * Should not use this field. `boostWeather`
    */
   boostWeathers: WeatherEnum[];
   /*
-   * TODO Should have one
+   * Boosted weather
    */
   boostWeather: WeatherEnum;
   /**
@@ -193,9 +187,8 @@ export interface PokemonTypeJson {
   themeColor: string;
   /**
    * Well contrasted color to `themeColor`
-   * TODO should be not optional
    */
-  themeForeColor?: string;
+  themeForeColor: string;
 }
 
 /**
