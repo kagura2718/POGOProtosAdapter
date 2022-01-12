@@ -49,7 +49,7 @@ function cloneJson(json: any): any {
   return JSON.parse(JSON.stringify(json));
 }
 
-// TODO should use io-ts fp-ts to test upstream has expected value or not
+// TODO should use io-ts fp-ts to test upstream has expected value type or not
 function buildFullTemplates(master: any): FullTemplateJson {
   const full: FullTemplateJson = {};
 
