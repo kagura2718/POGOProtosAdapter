@@ -7,7 +7,6 @@ import {
   PokemonEvolutionBranchMatcher, PokemonEvolutionBranchDatabase,
   PokemonFormsJson, PokemonFormJson,
   NameConversionTable,
-  // PokemonFamiliesJson,
   PokemonTypeEnum, PokemonFormBuiltJson,
   PokemonTypeDatabaseJson, PokemonTypeJson,
   WeatherEnum,
