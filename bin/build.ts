@@ -50,7 +50,7 @@ function cloneJson(json: any): any {
   return JSON.parse(JSON.stringify(json));
 }
 
-// TODO should use io-ts fp-ts
+// TODO should use io-ts fp-ts to test upstream has expected value or not
 function buildFullTemplates(master: any): FullTemplateJson {
   const full: FullTemplateJson = {};
 
@@ -178,7 +178,6 @@ function buildBasenames(full: FullTemplateJson, level: LevelJson): BasenameDatab
     ids.push(name);
   }
 
-  // TODO this is deprecated. move to translation table.
   // Special conversion to Friendly Name to internal id
   const conversion: NameConversionTable = require('../ConversionTables/PokemonEnglish2PokemonId.pretty.json');
 
@@ -374,8 +373,6 @@ function buildPokemonForm(raw: any, templateId: string): PokemonFormBuiltJson {
     }
   }
 
-  // TODO move and eliteQuickMove, eliteCinematicMove
-
   return json;
 }
 
@@ -534,8 +531,6 @@ function buildMoveJson(template: RawTemplateJson, movementId: string, combat?: C
 function buildMoves(full: FullTemplateJson, combatData: CombatDatabaseJson): MovesDatabaseJson {
   const db: MovesDatabaseJson = {};
 
-  // TODO this should be truncated if all ability is same (costume maybe differ)
-  // TODO check all basenames must contain some form
   for (const templateId in full) {
     const data = full[templateId];
 
@@ -675,13 +670,12 @@ function capitalizeWords(partOfId: string) {
 }
 
 // TODO should handle some of other name.
-//  not in translation table, but this id is clearly included in game.
+//  not in translation table, but this id is clearly included in game app.
 // TODO *_BLASTOISE, WRAP_* MUD_SLAP_FAST
 const specialMovesTable: { [id: string] : string | null; } = require('../ConversionTables/Moves2MovesEnglish.pretty.json');;
 
 function buildMovesTranslationTable(moves: MovesDatabaseJson): PogoIdEnConversionTable {
   const table: PogoIdSimpleConversionTable = {};
-  // TODO
   const translationJson = require('../PokemonTranslationData/data/moves.pretty.json');
   const translateTable: { [key: string] : any } = {};
 
@@ -691,7 +685,6 @@ function buildMovesTranslationTable(moves: MovesDatabaseJson): PogoIdEnConversio
     translateTable[en] = entry;
   }
 
-  // TODO just prepare. check contents.
   const interpolation: PogoIdInterpolationTable = require('../ConversionTables/moves-interpolation.pretty.json');
 
   for (const id in moves) {
