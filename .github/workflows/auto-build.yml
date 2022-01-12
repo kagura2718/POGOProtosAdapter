@@ -47,11 +47,6 @@ jobs:
       - name: Automated build
         run: |
           npm run generate
-      - name: Automated test
-        run: |
-          # TODO
-          echo "Test is Not yet implemented."
-          echo "Should test some of inner code before push."
       - name: Commit built files
         run: |
           cd ./${MY_EXTERNAL_DIR}

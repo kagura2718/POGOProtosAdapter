@@ -6,7 +6,7 @@
   "scripts": {
     "generate": "npm run generate-build; npm run generate-pretty-json;",
     "generate-build": "ts-node ./bin/build.ts ./POGOProtos/GM/v2_GAME_MASTER.json ./PokemonGoBuildData",
-    "generate-pretty-json": "echo not yet implemented",
+    "generate-pretty-json": "./bin/generate-pretty-json.sh ./PokemonGoBuildData",
     "test": "jest"
   },
   "keywords": [

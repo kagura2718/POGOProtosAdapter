@@ -3,6 +3,7 @@
 DIR="${1}"
 
 if [ -z "${DIR}" ] ; then
+  echo "usage: generate-pretty-json.sh JSON-DIRECTORY" >&2
   exit 1
 fi
 
