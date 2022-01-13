@@ -77,8 +77,6 @@ export default {
   // An array of file extensions your modules use
   moduleFileExtensions: [
     "json",
-    // NOTE: pegjs is prior than ts, js for unit test
-    "pegjs",
     "ts",
     "js"
     // "json",
