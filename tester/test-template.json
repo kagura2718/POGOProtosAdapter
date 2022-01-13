@@ -1,0 +1,45 @@
+{
+   "ADDRESSABLE_POKEMON_SETTINGS" : {
+      "built" : {},
+      "raw" : {
+         "addressablePokemonSettings" : {
+            "pokemonId" : [
+               "BULBASAUR",
+               "SQUIRTLE",
+               "KAKUNA",
+               "PIKACHU",
+               "PONYTA",
+               "ZIGZAGOON",
+               "GARDEVOIR",
+               "FLYGON",
+               "MELOETTA"
+            ]
+         },
+         "templateId" : "ADDRESSABLE_POKEMON_SETTINGS"
+      }
+   },
+   "ADDRESS_BOOK_IMPORT_SETTINGS" : {
+      "built" : {},
+      "raw" : {
+         "addressBookImportSettings" : {
+            "isEnabled" : true,
+            "onboardingScreenLevel" : 4,
+            "showOptOutCheckbox" : true
+         },
+         "templateId" : "ADDRESS_BOOK_IMPORT_SETTINGS"
+      }
+   },
+   "AR_TELEMETRY_SETTINGS" : {
+      "built" : {},
+      "raw" : {
+         "arTelemetrySettings" : {
+            "batterySamplingIntervalMs" : 10000,
+            "framerateSamplingIntervalMs" : 10000,
+            "measureBattery" : true,
+            "measureFramerate" : true,
+            "percentageSessionsToSample" : 0.5
+         },
+         "templateId" : "AR_TELEMETRY_SETTINGS"
+      }
+   }
+}
