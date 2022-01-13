@@ -18,8 +18,9 @@
     "src/Types.ts",
     "LICENSE"
   ],
-  "author": "kagura2718@gmail.com",
+  "author": "kagura2718 <kagura2718@gmail.com> (https://kagura2718.github.io/)",
   "license": "ECL-2.0",
+  "repository": "https://github.com/kagura2718/POGOProtosAdapter",
   "devDependencies": {
     "@types/jest": "^27.4.0",
     "@typescript-eslint/eslint-plugin": "^5.9.0",

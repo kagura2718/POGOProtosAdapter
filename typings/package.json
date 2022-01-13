@@ -13,7 +13,7 @@
     "Types.ts",
     "LICENSE"
   ],
-  "author": "kagura2718@gmail.com",
+  "author": "kagura2718 <kagura2718@gmail.com> (https://kagura2718.github.io/)",
   "license": "ECL-2.0",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.9.0",
