@@ -1,9 +1,10 @@
 {
   "name": "@kagura2718/pogoprotosadapter-typings",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Typings of PokemonGoBuildData",
   "scripts": {
   },
+  "main": "index.d.ts",
   "keywords": [
     "tool",
     "game"
