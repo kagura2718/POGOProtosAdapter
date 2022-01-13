@@ -182,7 +182,6 @@ export default {
 
   // A map from regular expressions to paths to transformers
   transform: {
-    "^.+\\.pegjs$": "pegjs-jest-transformer",
     "^.+\\.ts$": "ts-jest"
   }
 
