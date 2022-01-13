@@ -4,6 +4,7 @@
   "description": "Tester PokemonGoBuildData on Github Action",
   "main": "index.js",
   "scripts": {
+    "try": "ts-node ./main.ts",
     "test": "jest"
   },
   "keywords": [
