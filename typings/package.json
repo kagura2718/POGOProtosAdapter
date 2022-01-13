@@ -24,6 +24,7 @@
     "tslib": "^2.3.1",
     "typescript": "^4.5.4"
   },
+  "repository": "https://github.com/kagura2718/POGOProtosAdapter",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
