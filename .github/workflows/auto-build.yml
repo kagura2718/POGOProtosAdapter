@@ -35,7 +35,6 @@ jobs:
       - name: Check current settings and environment
         run: |
           which json_pp
-          echo "{\"test\":\"テスト\"}" | json_pp
           echo "{\"test\":\"テスト\"}" | json_pp -json_opt pretty,utf8
           printenv
       - name: Check out upstream branch
