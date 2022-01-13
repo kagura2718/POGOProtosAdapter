@@ -10,8 +10,30 @@ License under [ECL-2.0](http://www.osedu.org/licenses/ECL-2.0) Same as POGOProto
 
 
 
-about npm publish -> typing files to generated json. (TODO)
+## For developer
 
-need ./.npmrc file with write package permission to publish npm package to Github package
-TODO describe more
+### Cofiguration
+
+need configure ./typings/.npmrc file with `write package permission` to publish npm package to Github package at [here](https://github.com/settings/tokens/)
+
+
+Sample of .npmrc:
+
+```
+@kagura2718:registry=https://npm.pkg.github.com
+
+//npm.pkg.github.com/:_authToken=***Your Secret Token***
+```
+
+### Publish package
+
+```
+cd typings
+```
+
+Upgrade package.json version
+
+```
+npm publish
+```
 
