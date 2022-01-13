@@ -11,3 +11,7 @@ License under [ECL-2.0](http://www.osedu.org/licenses/ECL-2.0) Same as POGOProto
 
 
 about npm publish -> typing files to generated json. (TODO)
+
+need ./.npmrc file with write package permission to publish npm package to Github package
+TODO describe more
+

@@ -16,7 +16,7 @@ import {
   POKEMON_TYPE_CONVERSION, WEATHER_CONVERSION,
   PogoIdEnConversionTable, PogoIdSimpleConversionTable, PogoIdInterpolationTable,
   PokemonTypes, PokemonBaseStats,
-}   from '../src/Types';
+}   from '../typings/Types';
 
 function usage() {
   console.log(`usage: build MASTER-JSON OUTPUT-DIRECTORY`);
