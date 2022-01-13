@@ -1,56 +1,74 @@
 {
   "Normal": {
+    "foreColor": "white",
     "color": "9199a0"
   },
   "Fire": {
+    "foreColor": "white",
     "color": "ff9b54"
   },
   "Water": {
+    "foreColor": "white",
     "color": "4e8fd5"
   },
   "Electric": {
+    "foreColor": "white",
     "color": "f4d23b"
   },
   "Grass": {
+    "foreColor": "white",
     "color": "5fba53"
   },
   "Ice": {
+    "foreColor": "white",
     "color": "73cebe"
   },
   "Fighting": {
+    "foreColor": "white",
     "color": "cd4069"
   },
   "Poison": {
+    "foreColor": "white",
     "color": "a666c7"
   },
   "Ground": {
+    "foreColor": "white",
     "color": "da7746"
   },
   "Flying": {
+    "foreColor": "white",
     "color": "90a8de"
   },
   "Psychic": {
+    "foreColor": "white",
     "color": "f86e72"
   },
   "Bug": {
+    "foreColor": "white",
     "color": "90c12d"
   },
   "Rock": {
+    "foreColor": "white",
     "color": "c8b78a"
   },
   "Ghost": {
+    "foreColor": "white",
     "color": "5468ad"
   },
   "Dragon": {
+    "foreColor": "white",
     "color": "0968c0"
   },
   "Dark": {
+    "foreColor": "white",
     "color": "5a5365"
   },
   "Steel": {
+    "foreColor": "white",
     "color": "54879d"
   },
   "Fairy": {
+    "foreColor": "white",
     "color": "ef8ce2"
   }
 }

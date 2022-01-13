@@ -49,7 +49,6 @@ function cloneJson(json: any): any {
   return JSON.parse(JSON.stringify(json));
 }
 
-// TODO should use io-ts fp-ts to test upstream has expected value type or not
 function buildFullTemplates(master: any): FullTemplateJson {
   const full: FullTemplateJson = {};
 
@@ -241,8 +240,7 @@ function buildPokemonTypeDefs(full: FullTemplateJson): PokemonTypeDatabaseJson {
     const def = typeDefTable[key];
     const typeEnum = PokemonTypeNameToEnum(key);
     const themeColor: string = def['color'];
-    // TODO should be improved
-    const themeForeColor: string = 'white';
+    const themeForeColor: string = def['foreColor'];
     const keyColor = themeColor;
 
     const boostWeathers: WeatherEnum[] = [];
