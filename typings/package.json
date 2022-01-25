@@ -1,17 +1,21 @@
 {
   "name": "@kagura2718/pogoprotosadapter-typings",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Typings of PokemonGoBuildData",
   "scripts": {
+    "build": "tsc -p ."
   },
-  "main": "index.d.ts",
+  "main": "lib/index.d.ts",
   "keywords": [
     "tool",
     "game"
   ],
   "files": [
     "README.md",
-    "Types.ts",
+    "lib/*.ts",
+    "lib/*.js",
+    "src/Types.ts",
+    "index.d.ts",
     "LICENSE"
   ],
   "author": "kagura2718 <kagura2718@gmail.com> (https://kagura2718.github.io/)",
