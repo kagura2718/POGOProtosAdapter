@@ -1,4 +1,4 @@
 "use strict";
-const Types = require("Types");
+const Types = require("./Types");
 
 module.exports = Types;
