@@ -1,4 +1,4 @@
 "use strict";
 const Types = require("Types");
 
-exports.Types = Types;
+module.exports = Types;
