@@ -1,2 +1,4 @@
-export * from './Types';
-//# sourceMappingURL=index.js.map
+"use strict";
+const Types = require("Types");
+
+exports.Types = Types;

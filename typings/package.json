@@ -1,11 +1,11 @@
 {
   "name": "@kagura2718/pogoprotosadapter-typings",
-  "version": "0.5.4",
+  "version": "0.5.6",
   "description": "Typings of PokemonGoBuildData",
   "scripts": {
     "build": "tsc -p ."
   },
-  "main": "lib/index",
+  "main": "lib/index.js",
   "keywords": [
     "tool",
     "game"
