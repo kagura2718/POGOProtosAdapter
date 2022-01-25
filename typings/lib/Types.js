@@ -1,4 +1,7 @@
-export var PokemonTypeEnum;
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.POKEMON_TYPE_CONVERSION = exports.WEATHER_CONVERSION = exports.WeatherEnum = exports.PokemonTypeEffectivenessEnum = exports.AttackEffectivenessEnum = exports.PokemonTypeEnum = void 0;
+var PokemonTypeEnum;
 (function (PokemonTypeEnum) {
     PokemonTypeEnum[PokemonTypeEnum["Normal"] = 0] = "Normal";
     PokemonTypeEnum[PokemonTypeEnum["Fighting"] = 1] = "Fighting";
@@ -18,8 +21,8 @@ export var PokemonTypeEnum;
     PokemonTypeEnum[PokemonTypeEnum["Dragon"] = 15] = "Dragon";
     PokemonTypeEnum[PokemonTypeEnum["Dark"] = 16] = "Dark";
     PokemonTypeEnum[PokemonTypeEnum["Fairy"] = 17] = "Fairy";
-})(PokemonTypeEnum || (PokemonTypeEnum = {}));
-export var AttackEffectivenessEnum;
+})(PokemonTypeEnum = exports.PokemonTypeEnum || (exports.PokemonTypeEnum = {}));
+var AttackEffectivenessEnum;
 (function (AttackEffectivenessEnum) {
     AttackEffectivenessEnum[AttackEffectivenessEnum["VeryEffective"] = 0] = "VeryEffective";
     AttackEffectivenessEnum[AttackEffectivenessEnum["Effective"] = 1] = "Effective";
@@ -27,15 +30,15 @@ export var AttackEffectivenessEnum;
     AttackEffectivenessEnum[AttackEffectivenessEnum["Uneffective"] = 3] = "Uneffective";
     AttackEffectivenessEnum[AttackEffectivenessEnum["VeryUneffective"] = 4] = "VeryUneffective";
     AttackEffectivenessEnum[AttackEffectivenessEnum["SuperUneffective"] = 5] = "SuperUneffective";
-})(AttackEffectivenessEnum || (AttackEffectivenessEnum = {}));
-export var PokemonTypeEffectivenessEnum;
+})(AttackEffectivenessEnum = exports.AttackEffectivenessEnum || (exports.AttackEffectivenessEnum = {}));
+var PokemonTypeEffectivenessEnum;
 (function (PokemonTypeEffectivenessEnum) {
     PokemonTypeEffectivenessEnum[PokemonTypeEffectivenessEnum["NotEffective"] = 0] = "NotEffective";
     PokemonTypeEffectivenessEnum[PokemonTypeEffectivenessEnum["Normal"] = 1] = "Normal";
     PokemonTypeEffectivenessEnum[PokemonTypeEffectivenessEnum["NotVeryEffective"] = 2] = "NotVeryEffective";
     PokemonTypeEffectivenessEnum[PokemonTypeEffectivenessEnum["SuperEffective"] = 3] = "SuperEffective";
-})(PokemonTypeEffectivenessEnum || (PokemonTypeEffectivenessEnum = {}));
-export var WeatherEnum;
+})(PokemonTypeEffectivenessEnum = exports.PokemonTypeEffectivenessEnum || (exports.PokemonTypeEffectivenessEnum = {}));
+var WeatherEnum;
 (function (WeatherEnum) {
     WeatherEnum[WeatherEnum["Clear"] = 0] = "Clear";
     WeatherEnum[WeatherEnum["Fog"] = 1] = "Fog";
@@ -44,8 +47,8 @@ export var WeatherEnum;
     WeatherEnum[WeatherEnum["Rainy"] = 4] = "Rainy";
     WeatherEnum[WeatherEnum["Snow"] = 5] = "Snow";
     WeatherEnum[WeatherEnum["Windy"] = 6] = "Windy";
-})(WeatherEnum || (WeatherEnum = {}));
-export const WEATHER_CONVERSION = {
+})(WeatherEnum = exports.WeatherEnum || (exports.WeatherEnum = {}));
+exports.WEATHER_CONVERSION = {
     "CLEAR": WeatherEnum.Clear,
     "FOG": WeatherEnum.Fog,
     "OVERCAST": WeatherEnum.Overcast,
@@ -54,7 +57,7 @@ export const WEATHER_CONVERSION = {
     "SNOW": WeatherEnum.Snow,
     "WINDY": WeatherEnum.Windy,
 };
-export const POKEMON_TYPE_CONVERSION = {
+exports.POKEMON_TYPE_CONVERSION = {
     "POKEMON_TYPE_BUG": PokemonTypeEnum.Bug,
     "POKEMON_TYPE_DARK": PokemonTypeEnum.Dark,
     "POKEMON_TYPE_DRAGON": PokemonTypeEnum.Dragon,
