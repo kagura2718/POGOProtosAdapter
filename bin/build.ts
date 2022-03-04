@@ -652,7 +652,7 @@ function buildPokemonTranslationTable(basenames: BasenameDatabase): PogoIdEnConv
     }
 
     if ((key === null) || (!(key in translateTable))) {
-      console.error(`Not found for ${id} to ${key}`);
+      console.error(`Not found pokemonId:${id} to ${key}`);
       fatalHappen = true;
       continue;
     }
@@ -762,7 +762,7 @@ function buildMovesTranslationTable(moves: MovesDatabaseJson): PogoIdEnConversio
       }
 
       if (!(key in translateTable)) {
-        console.error(`Not found for ${id} to ${key}`);
+        console.error(`Not found for movementId:${id} to ${key}`);
         fatalHappen = true;
         continue;
       }
