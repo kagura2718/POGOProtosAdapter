@@ -611,7 +611,7 @@ function doBuild() {
 function buildPokemonTranslationTable(basenames: BasenameDatabase): PogoIdEnConversionTable {
   const table: PogoIdSimpleConversionTable = {};
   const translationJson = require('../PokemonTranslationData/data/pokemon.pretty.json');
-  const translateTable: { [key: string] : any } = {};
+  const translateTable: Record<string, any> = {};
 
   for (const entry of translationJson['data']) {
     const en = entry['i18n']['en'];
@@ -629,24 +629,28 @@ function buildPokemonTranslationTable(basenames: BasenameDatabase): PogoIdEnConv
   }
 
   for (const id of basenames.ids) {
-    let key: string;
+    let key: string | null;
 
     if (id in conversionInv) {
       key = conversionInv[id];
     } else if (id in interpolation) {
       if (id in translateTable) {
+        // Unexpectedly duplicated
         throw new Error(`Found translation entry id:${id}`);
       }
       continue;
     } else {
-      key = capitalize(id);
+      key = tryTranslate(id, translateTable);
     }
 
-    if (!(key in translateTable)) {
-      throw new Error(`Not found for ${id} to ${key}`);
+    if ((key === null) || (!(key in translateTable))) {
+      // TODO translation not found yet. fatal but should not raise
+      console.error(`Not found for ${id} to ${key}`);
+      continue;
     }
 
     if (key in table) {
+      // Unexpectedly duplicated key
       throw new Error(`Already registerd ${key}`);
     }
 
@@ -657,6 +661,53 @@ function buildPokemonTranslationTable(basenames: BasenameDatabase): PogoIdEnConv
     table,
     interpolation,
   };
+}
+
+// TODO or Fuzzy matching library.
+function tryTranslate(id: string, db: Record<string, any>): string | null {
+  const translators: ((id: string) => string)[] = [
+    capitalize,
+    underscoreToHyphenCapitalize1,
+    underscoreToSpaceCapitalize1,
+    underscoreToHyphenCapitalize,
+    underscoreToSpaceCapitalize,
+    underscoreToHyphen,
+    underscoreToSpace,
+  ];
+
+  for (const f of translators) {
+    const k = f(id);
+
+    if (k in db) {
+      return k;
+    }
+  }
+
+  return null;
+}
+
+function underscoreToHyphenCapitalize1(s: string): string {
+  return capitalize(s).split('_').join('-');
+}
+
+function underscoreToSpaceCapitalize1(s: string): string {
+  return capitalize(s).split('_').join(' ');
+}
+
+function underscoreToHyphenCapitalize(s: string): string {
+  return s.split('_').map(s => capitalize(s)).join('-');
+}
+
+function underscoreToSpaceCapitalize(s: string): string {
+  return s.split('_').map(s => capitalize(s)).join(' ');
+}
+
+function underscoreToSpace(s: string): string {
+  return s.replace(/_/g, ' ');
+}
+
+function underscoreToHyphen(s: string): string {
+  return s.replace(/_/g, '-');
 }
 
 function capitalize(s: string): string {
@@ -703,7 +754,9 @@ function buildMovesTranslationTable(moves: MovesDatabaseJson): PogoIdEnConversio
       }
 
       if (!(key in translateTable)) {
-        throw new Error(`Not found for ${id} to ${key}`);
+        // TODO translation not found yet. fatal but should not raise
+        console.error(`Not found for ${id} to ${key}`);
+        continue;
       }
     }
 

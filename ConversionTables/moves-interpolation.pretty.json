@@ -1,4 +1,20 @@
 {
+  "AEROBLAST_PLUS": {
+    "ja": "エアロブラスト+",
+    "en": "Aeroblast+"
+  },
+  "AEROBLAST_PLUS_PLUS": {
+    "ja": "エアロブラスト++",
+    "en": "Aeroblast++"
+  },
+  "SACRED_FIRE_PLUS": {
+    "ja": "せいなるほのお+",
+    "en": "Sacred Fire+"
+  },
+  "SACRED_FIRE_PLUS_PLUS": {
+    "ja": "せいなるほのお++",
+    "en": "Sacred Fire++"
+  },
   "TECHNO_BLAST_BURN": {
     "ja": "テクノバスター(ほのお)",
     "en": "Techno Blaster (Burn)"
