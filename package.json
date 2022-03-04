@@ -1,10 +1,10 @@
 {
   "name": "@kagura2718/pogoprotosadapter",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Generate PokemonGoBuildData on Github Action",
   "main": "index.js",
   "scripts": {
-    "generate": "npm run generate-build; npm run generate-pretty-json;",
+    "generate": "npm run generate-build && npm run generate-pretty-json;",
     "generate-build": "ts-node ./bin/build.ts ./POGOProtos/GM/v2_GAME_MASTER.json ./PokemonGoBuildData",
     "generate-pretty-json": "./bin/generate-pretty-json.sh ./PokemonGoBuildData"
   },
