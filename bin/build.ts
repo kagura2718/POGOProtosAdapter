@@ -45,6 +45,8 @@ const PokemonTypeAttackScalarConversion: { [key: number]: PokemonTypeEnum } = {
   17: PokemonTypeEnum.Fairy,
 };
 
+let fatalHappen: boolean = false;
+
 function cloneJson(json: any): any {
   return JSON.parse(JSON.stringify(json));
 }
@@ -453,6 +455,7 @@ function checkMegaEvolution(forms: PokemonFormJson[]) {
 
       if (!existing) {
         console.error(`Not existing Mega evolution form Template: ${JSON.stringify(jsonObj)}`);
+        fatalHappen = true;
       }
     }
   }
@@ -606,6 +609,11 @@ function doBuild() {
 
   const translationMoves = buildMovesTranslationTable(moves);
   writeJson(`translation/moves.json`, translationMoves);
+
+  // Some of error happen when build, exit abnormally to attention to maintainer.
+  if (fatalHappen) {
+    process.exit(1)
+  }
 }
 
 function buildPokemonTranslationTable(basenames: BasenameDatabase): PogoIdEnConversionTable {
@@ -644,8 +652,8 @@ function buildPokemonTranslationTable(basenames: BasenameDatabase): PogoIdEnConv
     }
 
     if ((key === null) || (!(key in translateTable))) {
-      // TODO translation not found yet. fatal but should not raise
       console.error(`Not found for ${id} to ${key}`);
+      fatalHappen = true;
       continue;
     }
 
@@ -754,8 +762,8 @@ function buildMovesTranslationTable(moves: MovesDatabaseJson): PogoIdEnConversio
       }
 
       if (!(key in translateTable)) {
-        // TODO translation not found yet. fatal but should not raise
         console.error(`Not found for ${id} to ${key}`);
+        fatalHappen = true;
         continue;
       }
     }
