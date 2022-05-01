@@ -1,4 +1,16 @@
 {
+  "@MEGA_LATIAS": {
+    "ja": "メガラティアス",
+    "en": "Mega Latias"
+  },
+  "@MEGA_LATIOS": {
+    "ja": "メガラティオス",
+    "en": "Mega Latios"
+  },
+  "@MEGA_KANGASKHAN": {
+    "ja": "メガガルーラ",
+    "en": "Mega Kangaskhan"
+  },
   "@MEGA_AERODACTYL": {
     "ja": "メガプテラ",
     "en": "Mega Aerodactyl"
