@@ -1,4 +1,8 @@
 [
+  {"ownId":"@MEGA_LATIOS","pokemonId":"LATIOS","megaBranch":"TEMP_EVOLUTION_MEGA"},
+  {"ownId":"@MEGA_LATIAS","pokemonId":"LATIAS","megaBranch":"TEMP_EVOLUTION_MEGA"},
+  {"ownId":"@MEGA_KANGASKHAN","pokemonId":"KANGASKHAN","megaBranch":"TEMP_EVOLUTION_MEGA"},
+  {"ownId":"@MEGA_KANGASKHAN","pokemonId":"KANGASKHAN","megaBranch":"TEMP_EVOLUTION_MEGA","pokemonForm":"KANGASKHAN_NORMAL"},
   {"ownId":"@MEGA_AERODACTYL","pokemonId":"AERODACTYL","megaBranch":"TEMP_EVOLUTION_MEGA"},
   {"ownId":"@MEGA_AERODACTYL","pokemonId":"AERODACTYL","megaBranch":"TEMP_EVOLUTION_MEGA","pokemonForm":"AERODACTYL_NORMAL"},
   {"ownId":"@MEGA_VENUSAUR","pokemonId":"VENUSAUR","megaBranch":"TEMP_EVOLUTION_MEGA"},
