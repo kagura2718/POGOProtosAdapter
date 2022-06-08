@@ -44,7 +44,7 @@ jobs:
           git clone --depth 1 "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/kagura2718/PokemonTranslationData.git" ./PokemonTranslationData
       - name: Prepare build environment
         run: |
-          npm i
+          npm install --force
       - name: Automated build
         run: |
           npm run generate
