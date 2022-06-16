@@ -351,6 +351,12 @@ function buildPokemonForm(raw: any, templateId: string): PokemonFormBuiltJson {
 
     for (const tmp of raw['tempEvoOverrides']) {
       const tempEvoId = tmp['tempEvoId'];
+
+      if (!tempEvoId) {
+        console.error(`'tempEvoId' is missing`, tmp);
+        continue;
+      }
+
       const pokemonTypes: PokemonTypes = {
         pokemonType: POKEMON_TYPE_CONVERSION[tmp['typeOverride']],
       };
