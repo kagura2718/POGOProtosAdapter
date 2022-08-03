@@ -1,4 +1,112 @@
 {
+  "@MEGA_ALAKAZAM": {
+    "ja": "メガフーディン ",
+    "en": "Mega Alakazam"
+  },
+  "@MEGA_PINSIR": {
+    "ja": "メガカイロス ",
+    "en": "Mega Pinsir"
+  },
+  "@MEGA_HERACROSS": {
+    "ja": "メガヘラクロス ",
+    "en": "Mega Heracross"
+  },
+  "@MEGA_TYRANITAR": {
+    "ja": "メガバンギラス ",
+    "en": "Mega Tyranitar"
+  },
+  "@MEGA_BLAZIKEN": {
+    "ja": "メガバシャーモ ",
+    "en": "Mega Blaziken"
+  },
+  "@MEGA_GARDEVOIR": {
+    "ja": "メガサーナイト ",
+    "en": "Mega Gardevoir"
+  },
+  "@MEGA_MAWILE": {
+    "ja": "メガクチート ",
+    "en": "Mega Mawile"
+  },
+  "@MEGA_MEDICHAM": {
+    "ja": "メガチャーレム ",
+    "en": "Mega Medicham"
+  },
+  "@MEGA_SHARPEDO": {
+    "ja": "メガサメハダー ",
+    "en": "Mega Sharpedo"
+  },
+  "@MEGA_SALAMENCE": {
+    "ja": "メガボーマンダ ",
+    "en": "Mega Salamence"
+  },
+  "@MEGA_RAYQUAZA": {
+    "ja": "メガレックウザ ",
+    "en": "Mega Rayquaza"
+  },
+  "@MEGA_GARCHOMP": {
+    "ja": "メガガブリアス ",
+    "en": "Mega Garchomp"
+  },
+  "@MEGA_AUDINO": {
+    "ja": "メガタブンネ ",
+    "en": "Mega Audino"
+  },
+  "@MEGA_SCIZOR": {
+    "ja": "メガハッサム ",
+    "en": "Mega Scizor"
+  },
+  "@MEGA_SCEPTILE": {
+    "ja": "メガジュカイン ",
+    "en": "Mega Sceptile"
+  },
+  "@MEGA_SWAMPERT": {
+    "ja": "メガラグラージ ",
+    "en": "Mega Swampert"
+  },
+  "@MEGA_SABLEYE": {
+    "ja": "メガヤミラミ ",
+    "en": "Mega Sableye"
+  },
+  "@MEGA_AGGRON": {
+    "ja": "メガボスゴドラ ",
+    "en": "Mega Aggron"
+  },
+  "@MEGA_CAMERUPT": {
+    "ja": "メガバクーダ ",
+    "en": "Mega Camerupt"
+  },
+  "@MEGA_BANETTE": {
+    "ja": "メガジュペッタ ",
+    "en": "Mega Banette"
+  },
+  "@MEGA_GLALIE": {
+    "ja": "メガオニゴーリ ",
+    "en": "Mega Glalie"
+  },
+  "@MEGA_METAGROSS": {
+    "ja": "メガメタグロス ",
+    "en": "Mega Metagross"
+  },
+  "@MEGA_LUCARIO": {
+    "ja": "メガルカリオ ",
+    "en": "Mega Lucario"
+  },
+  "@MEGA_GALLADE": {
+    "ja": "メガエルレイド ",
+    "en": "Mega Gallade"
+  },
+  "@MEGA_DIANCIE": {
+    "ja": "メガディアンシー ",
+    "en": "Mega Diancie"
+  },
+  "@MEGA_MEWTWO_X": {
+    "ja": "メガミュウツーX",
+    "en": "Mega Mewtwo X"
+  },
+  "@MEGA_MEWTWO_Y": {
+    "ja": "メガミュウツーY",
+    "en": "Mega Mewtwo Y"
+  },
   "@MEGA_LATIAS": {
     "ja": "メガラティアス",
     "en": "Mega Latias"
