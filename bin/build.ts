@@ -508,7 +508,7 @@ function buildMoveJson(template: RawTemplateJson, movementId: string, combat?: C
     damageWindowEndMs: template['damageWindowEndMs'],
     damageWindowStartMs: template['damageWindowStartMs'],
     durationMs: template['durationMs'],
-    energyDelta: template['energyDelta'],
+    energyDelta: template['energyDelta'] || 0,
     power: template['power'],
     isQuickMoves,
     isCinematicMoves: !isQuickMoves,
