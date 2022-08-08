@@ -519,9 +519,9 @@ function buildMoveJson(template: RawTemplateJson, movementId: string, combat?: C
   if (combat && isQuickMoves) {
     combatOverrides = combat.built as CombatOverridesJson;
 
-    // TODO now testing this compution
+    // 500ms -> turn of attack in PvP
     const rigidTurn = Math.ceil(details.durationMs / 500);
-    const EPT = combat.built.energyDelta / rigidTurn;
+    const EPT = (combat.built.energyDelta / rigidTurn) || 0;
 
     combatOverrides.rigidTurn = rigidTurn;
     combatOverrides.EPT = EPT;
