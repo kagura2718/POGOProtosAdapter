@@ -42,6 +42,9 @@ jobs:
           git clone --depth 1 "git@github.com:kagura2718/PokemonGoBuildData.git" ./${MY_EXTERNAL_DIR}
           git clone --depth 1 "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/Furtif/POGOProtos.git" ./POGOProtos
           git clone --depth 1 "https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/kagura2718/PokemonTranslationData.git" ./PokemonTranslationData
+          cd ${MY_EXTERNAL_DIR} && git show --summary
+          cd ./POGOProtos && git show --summary
+          cd ./PokemonTranslationData && git show --summary
       - name: Prepare build environment
         run: |
           npm install --force
